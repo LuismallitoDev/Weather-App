@@ -44,7 +44,6 @@ function AppContextProvider({ children }) {
   };
   const handleQuery = (value) =>{
     setQuery(value)
-    alert(value);
   }
   const transformDate = (inputDate) => {
     const months = [

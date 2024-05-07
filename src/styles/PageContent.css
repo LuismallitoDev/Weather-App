@@ -38,6 +38,7 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 40px;
 }
+
 .forecast-div {
   width: 100%;
   min-width: 100px;
@@ -48,6 +49,9 @@
   justify-content: space-around;
   height: 177px;
   font-family: "Raleway", "Poppins", sans-serif;
+  &:first-of-type{
+    display: none;
+  }
 }
 .forecast-div h3 {
   font-size: 16px;

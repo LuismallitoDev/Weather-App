@@ -6,7 +6,7 @@ export const useFetchForecast = (city) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    let URL_API = `https://api.weatherapi.com/v1/forecast.json?key=9f1b2390b34c40f68c650817240505&q=${city}&days=5&aqi=no&alerts=no`;
+    let URL_API = `https://api.weatherapi.com/v1/forecast.json?key=9f1b2390b34c40f68c650817240505&q=${city}&days=6&aqi=no&alerts=no`;
 
     fetch(URL_API)
       .then((res) => {
