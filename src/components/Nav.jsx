@@ -7,7 +7,7 @@ import { SearchDiv } from "../components/SearchDiv";
 
 export function Nav() {
   const [nav, setNav] = useState(false); //false means closed, and true means opened
-  //false means celcius, and true means fahrenheit
+  
   let {
     temperature,
     getCurrentDate,
@@ -17,7 +17,8 @@ export function Nav() {
     handleQuery,
     resultSearch,
     handleCity
-  } = useContext(AppContext); //false meansntext(false); //false means+
+  } = useContext(AppContext); 
+
   const changeCity = (value) =>{
     handleCity(value);
     document.getElementById("query").value = value;

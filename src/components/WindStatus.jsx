@@ -4,7 +4,7 @@ const WindStatus = ({ dir, degree }) => {
     <div className="wind-status">
       <span
         className="material-symbols-outlined"
-        style={{ transform: `rotate(${degree}deg)`, transition: 'transform .1s ease-in-out'}}
+        style={{ transform: `rotate(${degree}deg)`, transition: 'transform 800ms ease-in-out'}}
       >
         navigation
       </span>
