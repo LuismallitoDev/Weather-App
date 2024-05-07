@@ -1,0 +1,163 @@
+.page-content {
+  width: 75%;
+  height: 100%;
+  background-color: #100e1d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.temperature-bar {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 30px 0;
+}
+.temperature-bar button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #585676;
+  color: #e7e7eb;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+.temperature-bar button.selected {
+  color: #110e3c;
+  background-color: #e7e7eb;
+}
+.forecast-container {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+.forecast-div {
+  width: 100%;
+  min-width: 100px;
+  background-color: #1e213a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 177px;
+  font-family: "Raleway", "Poppins", sans-serif;
+}
+.forecast-div h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #e7e7eb;
+}
+.max-min {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 16px;
+}
+.max {
+  font-weight: 500;
+  color: #e7e7eb;
+}
+.min {
+  font-weight: 400;
+  color: #a09fb1;
+}
+.hightlights {
+  width: 75%;
+  height: 100%;
+}
+.hightlights > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.hightlight {
+  background-color: #1e213a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.hightlight h3 {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  color: #e7e7eb;
+}
+.hightlight > div:first-of-type span:first-child {
+  font-family: Raleway;
+  font-size: 64px;
+  font-weight: 600;
+  color: #e7e7eb;
+  margin-right: 5px;
+}
+.hightlight > div:first-of-type span:last-child {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 400;
+  color: #e7e7eb;
+}
+.title-hightlight {
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  color: #e7e7eb;
+  align-self: flex-start;
+  padding: 45px 0 15px;
+}
+.humidity-bar{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 5px;
+}
+.humidity-bar > div:first-of-type{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #A09FB1;
+  font-family: "Raleway" , "Poppins" , sans-serif;
+}
+.porcentaje-bar{
+  width: 100%;
+  height: 8px;
+  background-color: #E7E7EB;
+  border-radius: 12px;
+}
+.humidity-bar > div:last-of-type{
+  color: #A09FB1;
+  text-align: right;
+  font-family: "Raleway" , "Poppins" , sans-serif;
+}
+.percentaje{
+  height: 100%;
+  background-color: #FFEC65;
+  border-radius: 12px;
+  transition: width 800ms ease-in-out;
+}
+.wind-status{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.wind-status span:first-of-type{
+  background-color: #585676;
+  border-radius: 50%;
+  padding: 4px;
+  color: #e7e7eb;
+}
+.wind-status span:last-of-type{
+  font-family: "Raleway" , "Poppins" , sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #e7e7eb;
+}
